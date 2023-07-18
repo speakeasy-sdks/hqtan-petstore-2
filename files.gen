@@ -5,6 +5,7 @@ pylintrc
 setup.py
 src/hqtan_petstore_2/__init__.py
 src/hqtan_petstore_2/models/__init__.py
+src/hqtan_petstore_2/models/errors/sdkerror.py
 src/hqtan_petstore_2/utils/__init__.py
 src/hqtan_petstore_2/utils/retries.py
 src/hqtan_petstore_2/utils/utils.py
@@ -15,6 +16,7 @@ src/hqtan_petstore_2/models/operations/__init__.py
 src/hqtan_petstore_2/models/shared/error.py
 src/hqtan_petstore_2/models/shared/pet.py
 src/hqtan_petstore_2/models/shared/__init__.py
+src/hqtan_petstore_2/models/errors/__init__.py
 docs/sdks/hqtanpetstore2/README.md
 docs/sdks/pets/README.md
 USAGE.md
