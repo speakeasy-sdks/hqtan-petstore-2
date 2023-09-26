@@ -17,8 +17,6 @@ src/hqtan_petstore_2/models/shared/error.py
 src/hqtan_petstore_2/models/shared/pet.py
 src/hqtan_petstore_2/models/shared/__init__.py
 src/hqtan_petstore_2/models/errors/__init__.py
-docs/sdks/hqtanpetstore2/README.md
-docs/sdks/pets/README.md
 USAGE.md
 docs/models/operations/createpetsresponse.md
 docs/models/operations/listpetsrequest.md
@@ -27,4 +25,6 @@ docs/models/operations/showpetbyidrequest.md
 docs/models/operations/showpetbyidresponse.md
 docs/models/shared/error.md
 docs/models/shared/pet.md
+docs/sdks/hqtanpetstore2/README.md
+docs/sdks/pets/README.md
 .gitattributes
