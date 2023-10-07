@@ -44,9 +44,7 @@ from hqtan_petstore_2.models import operations
 
 s = hqtan_petstore_2.HqtanPetstore2()
 
-req = operations.ListPetsRequest(
-    limit=21453,
-)
+req = operations.ListPetsRequest()
 
 res = s.pets.list_pets(req)
 
