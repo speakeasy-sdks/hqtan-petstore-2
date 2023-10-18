@@ -79,7 +79,7 @@ from hqtan_petstore_2.models import operations
 s = hqtan_petstore_2.HqtanPetstore2()
 
 req = operations.ShowPetByIDRequest(
-    pet_id='South bandwidth male',
+    pet_id='Bicycle',
 )
 
 res = s.pets.show_pet_by_id(req)

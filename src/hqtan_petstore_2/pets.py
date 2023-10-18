@@ -3,7 +3,7 @@
 from .sdkconfiguration import SDKConfiguration
 from hqtan_petstore_2 import utils
 from hqtan_petstore_2.models import errors, operations, shared
-from typing import Optional
+from typing import List, Optional
 
 class Pets:
     sdk_configuration: SDKConfiguration
@@ -61,7 +61,7 @@ class Pets:
             res.headers = http_res.headers
             
             if utils.match_content_type(content_type, 'application/json'):
-                out = utils.unmarshal_json(http_res.text, Optional[list[shared.Pet]])
+                out = utils.unmarshal_json(http_res.text, Optional[List[shared.Pet]])
                 res.pets = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
