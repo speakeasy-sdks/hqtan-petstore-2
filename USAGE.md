@@ -4,7 +4,6 @@
 ```python
 import hqtan_petstore_2
 
-
 s = hqtan_petstore_2.HqtanPetstore2()
 
 
