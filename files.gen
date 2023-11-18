@@ -8,6 +8,7 @@ src/hqtan_petstore_2/utils/__init__.py
 src/hqtan_petstore_2/utils/retries.py
 src/hqtan_petstore_2/utils/utils.py
 src/hqtan_petstore_2/models/errors/sdkerror.py
+tests/helpers.py
 src/hqtan_petstore_2/models/operations/createpets.py
 src/hqtan_petstore_2/models/operations/listpets.py
 src/hqtan_petstore_2/models/operations/showpetbyid.py
