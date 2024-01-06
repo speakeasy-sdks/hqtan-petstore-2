@@ -4,15 +4,15 @@ management:
   docChecksum: 2516596125ef223fbbef6c434d22eaac
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 3.1.1
-  configChecksum: f1e0cc8c5e0d8224aad5978bea682d78
+  generationVersion: 2.228.1
+  releaseVersion: 3.1.2
+  configChecksum: e3fb73a2520f6288cadbc1e49c5e702e
   repoURL: https://github.com/speakeasy-sdks/hqtan-petstore-2.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/hqtan-petstore-2.git
 features:
   python:
-    core: 4.4.0
+    core: 4.4.1
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/hqtan_petstore_2/sdkconfiguration.py
