@@ -56,6 +56,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import hqtan_petstore_2
+from hqtan_petstore_2.models import errors
 
 s = hqtan_petstore_2.HqtanPetstore2()
 
@@ -64,7 +65,7 @@ res = None
 try:
     res = s.pets.create_pets()
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.status_code == 200:
