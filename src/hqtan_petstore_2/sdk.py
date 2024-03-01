@@ -4,6 +4,7 @@ import requests as requests_http
 from .pets import Pets
 from .sdkconfiguration import SDKConfiguration
 from hqtan_petstore_2 import utils
+from hqtan_petstore_2._hooks import SDKHooks
 from typing import Dict
 
 class HqtanPetstore2:
@@ -39,6 +40,16 @@ class HqtanPetstore2:
                 server_url = utils.template_url(server_url, url_params)
 
         self.sdk_configuration = SDKConfiguration(client, None, server_url, server_idx, retry_config=retry_config)
+
+        hooks = SDKHooks()
+
+        current_server_url, *_ = self.sdk_configuration.get_server_details()
+        server_url, self.sdk_configuration.client = hooks.sdk_init(current_server_url, self.sdk_configuration.client)
+        if current_server_url != server_url:
+            self.sdk_configuration.server_url = server_url
+
+        # pylint: disable=protected-access
+        self.sdk_configuration._hooks=hooks
        
         self._init_sdks()
     
